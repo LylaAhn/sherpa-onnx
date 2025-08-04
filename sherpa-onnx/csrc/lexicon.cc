@@ -290,12 +290,12 @@ std::vector<TokenIDs> Lexicon::ConvertTextToTokenIdsNotChinese(
     SHERPA_ONNX_LOGE("%s", os.str().c_str());
 #endif
   }
-
+  os << "1";
   int32_t blank = token2id_.at(" ");
-
+  os << "2 " << blank << "\n";
   std::vector<TokenIDs> ans;
   std::vector<int64_t> this_sentence;
-
+  os << "3" << token2id_.at(" ") << "\n";
   for (const auto &w : words) {
     if (w == "." || w == ";" || w == "!" || w == "?" || w == "-" || w == ":" ||
         // not sentence break
