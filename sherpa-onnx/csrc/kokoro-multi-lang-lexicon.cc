@@ -283,7 +283,7 @@ class KokoroMultiLangLexicon::Impl {
     std::vector<std::string> words = SplitUtf8(text);
     if (debug_) {
       std::ostringstream os;
-      os << "After splitting to words: ";
+      os << "After splitting to words0: ";
       std::string sep;
       for (const auto &w : words) {
         os << sep << w;
