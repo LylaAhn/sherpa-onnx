@@ -169,7 +169,7 @@ std::vector<TokenIDs> Lexicon::ConvertTextToTokenIdsChinese(
          << c;
     }
     os << "\n";
-    os << "After splitting to words:";
+    os << "After splitting to words1:";
     for (const auto &w : words) {
       os << " " << w;
     }
@@ -278,7 +278,7 @@ std::vector<TokenIDs> Lexicon::ConvertTextToTokenIdsNotChinese(
          << c;
     }
     os << "\n";
-    os << "After splitting to words:";
+    os << "After splitting to words2:";
     for (const auto &w : words) {
       os << " " << w;
     }

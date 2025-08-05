@@ -153,7 +153,7 @@ class MeloTtsLexicon::Impl {
           fprintf(stderr, " %02x", c);
         }
         fprintf(stderr, "\n");
-        fprintf(stderr, "After splitting to words:");
+        fprintf(stderr, "After splitting to words3:");
         for (const auto &w : words) {
           fprintf(stderr, " %s", w.c_str());
         }
