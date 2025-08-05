@@ -282,12 +282,12 @@ std::vector<TokenIDs> Lexicon::ConvertTextToTokenIdsNotChinese(
     for (const auto &w : words) {
       os << " " << w;
     }
-    os << "HERE========\n";
+    SHERPA_ONNX_LOGE("HERE========\n"); 
 
 #if __OHOS__
-    os << "HERE1========\n";
+    SHERPA_ONNX_LOGE("HERE1========\n"); 
     SHERPA_ONNX_LOGE("%{public}s", os.str().c_str());
-    os << "HERE2========\n";
+    SHERPA_ONNX_LOGE("HERE2========\n");
 #else
     os << "HERE3========\n";
     SHERPA_ONNX_LOGE("%s", os.str().c_str());
