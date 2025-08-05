@@ -55,8 +55,10 @@ final DynamicLibrary _dylib = () {
 
   if (Platform.isWindows) {
     if (_path == null) {
+      print("HERE========~~~\n");
       return DynamicLibrary.open('sherpa-onnx-c-api.dll');
     } else {
+      print("HERE~========~~~\n");
       return DynamicLibrary.open('$_path\\sherpa-onnx-c-api.dll');
     }
   }
